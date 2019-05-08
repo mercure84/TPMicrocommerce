@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "c444d3f2-4565-4ab1-bb5d-e7c632e138d9",
+		"name": "TestsTP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Afficher les marges",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:9090/trierProduits",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"trierProduits"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Trier les produits",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:9090/trierProduits",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"trierProduits"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AJoiuter d'un produit avec prix ,égal à 0",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\n      \n        \"nom\": \"Aspirateur Robot\",\n        \"prix\": 0,\n        \"prixAchat\": 200\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:9090/Produits",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Produits"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
